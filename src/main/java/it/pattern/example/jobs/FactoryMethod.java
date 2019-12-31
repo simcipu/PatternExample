@@ -23,7 +23,7 @@ public class FactoryMethod
 
    private final static org.slf4j.Logger logger = LoggerFactory.getLogger(FactoryMethod.class);
 
-   @Scheduled(fixedRate = 5000)
+   @Scheduled(fixedRate = 6000)
     public void LoggoPattern(){
         
       logger.info("****************************************************");  

@@ -20,7 +20,7 @@ public class BuilderPattern {
 
     private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BuilderPattern.class);
 
-    @Scheduled(fixedRate = 6000)
+    @Scheduled(fixedRate = 5000)
     public void LoggoPattern() {
         logger.info("****************************************************");
         logger.info("BUILDER METHOD");
