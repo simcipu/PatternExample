@@ -24,7 +24,12 @@ public class SingletonPattern {
 
         logger.info("****************************************************");
         logger.info("SINGLETON METHOD");
-        Singleton.getIstance().metodo();
+        Singleton s1 = Singleton.getIstance();
+        s1.metodo();
+        Singleton s2 = Singleton.getIstance();
+        s2.metodo();
+        Singleton s3 = Singleton.getIstance();
+        s3.metodo();
         logger.info("****************************************************");
 
     }

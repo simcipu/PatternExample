@@ -45,6 +45,7 @@ public class BuilderPattern {
         Veicolo vec2 = veicoloBuilder.build();
         Veicolo vec3 = veicoloBuilder.build();
         Veicolo vec4 = veicoloBuilder.uso(Veicolo.Uso.AQUATICO).build();
+
         logger.info(vec2.toString());
         logger.info(vec3.toString());
         logger.info(vec4.toString());
