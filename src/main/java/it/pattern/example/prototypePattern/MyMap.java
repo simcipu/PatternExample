@@ -5,36 +5,31 @@
  */
 package it.pattern.example.prototypePattern;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.List;
 
 /**
  *
  * @author Utente
  */
-public class MyLinkedHashMap extends Prototype{
+public class MyMap extends Prototype{
 
-  private LinkedHashMap hash = new LinkedHashMap();
+  private LinkedHashMap map = new LinkedHashMap();
  
     @Override
     public Object clone() throws CloneNotSupportedException{
-        return (MyLinkedHashMap) super.clone();
+        return (MyMap) super.clone();
     }
  
     @Override
-    public void addItem(Object key, Object value) {
-        hash.put(key, value);
+    public void add(Object key, Object value) {
+        map.put(key, value);
     }
  
-    @Override
-    public int getSize() {
-        return hash.size();
-    }
+
 
     @Override
     public Object getList(String key) {
     
-       return hash.get(key);
+       return map.get(key);
     }
 }

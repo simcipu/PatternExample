@@ -5,7 +5,7 @@
  */
 package it.pattern.example.jobs;
 
-import it.pattern.example.prototypePattern.MyLinkedHashMap;
+import it.pattern.example.prototypePattern.MyMap;
 import it.pattern.example.prototypePattern.Prototype;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -23,13 +23,13 @@ public class PrototypePattern {
     @Scheduled(fixedRate = 8000)
     public void LoggoPattern() throws CloneNotSupportedException {
 
-        Prototype hash = new MyLinkedHashMap();
-        Prototype hashCloned = (MyLinkedHashMap) hash.clone();
-        hash.addItem("key1", "primo valore");
-        hashCloned.addItem("key2","secondo valore");
-        String ob = (String) hash.getList("key1");
-        String ob2=(String) hashCloned.getList("key2");
-        String ob3=(String) hashCloned.getList("key1");
+        Prototype map = new MyMap();
+        Prototype mapCloned = (MyMap) map.clone();
+        map.add("key1", "primo valore");
+        mapCloned.add("key2","secondo valore");
+        String ob = (String) map.getList("key1");
+        String ob2=(String) mapCloned.getList("key2");
+        String ob3=(String) mapCloned.getList("key1");
         
         logger.info("****************************************************");
         logger.info("PROTOTYPE METHOD");

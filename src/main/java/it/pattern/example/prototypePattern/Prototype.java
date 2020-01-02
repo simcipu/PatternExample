@@ -18,9 +18,9 @@ public abstract class Prototype implements Cloneable{
         return super.clone();
     }
     
-    public abstract void addItem(Object key, Object value);
+    public abstract void add(Object key, Object value);
  
-    public abstract int getSize();
+
     
     public abstract Object getList(String key);
     
