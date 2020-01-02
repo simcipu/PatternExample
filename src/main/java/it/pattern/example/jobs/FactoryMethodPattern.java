@@ -5,8 +5,8 @@
  */
 package it.pattern.example.jobs;
 
-import it.pattern.example.factoryMethod.VeicoloEnum;
-import it.pattern.example.factoryMethod.VeicoloFactory;
+import it.pattern.example.factoryMethodPattern.VeicoloEnum;
+import it.pattern.example.factoryMethodPattern.VeicoloFactory;
 import java.util.Arrays;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -18,10 +18,10 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class FactoryMethod 
+public class FactoryMethodPattern 
 {
 
-   private final static org.slf4j.Logger logger = LoggerFactory.getLogger(FactoryMethod.class);
+   private final static org.slf4j.Logger logger = LoggerFactory.getLogger(FactoryMethodPattern.class);
 
    @Scheduled(fixedRate = 6000)
     public void LoggoPattern(){

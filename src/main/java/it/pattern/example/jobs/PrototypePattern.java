@@ -5,8 +5,8 @@
  */
 package it.pattern.example.jobs;
 
-import it.pattern.example.prototype.MyLinkedHashMap;
-import it.pattern.example.prototype.Prototype;
+import it.pattern.example.prototypePattern.MyLinkedHashMap;
+import it.pattern.example.prototypePattern.Prototype;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

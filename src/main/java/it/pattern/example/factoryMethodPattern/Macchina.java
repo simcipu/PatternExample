@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package it.pattern.example.factoryMethod;
+package it.pattern.example.factoryMethodPattern;
 
 /**
  *
  * @author Utente
  */
-public class Moto implements Veicolo{
+public class Macchina implements Veicolo{
 
     @Override
     public String getCall() {
-       return "Ho due ruote";
+
+        
+        return "Ho quattro ruote";
     }
     
 }
