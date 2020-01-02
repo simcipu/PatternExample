@@ -28,7 +28,7 @@ public class MyMap extends Prototype{
 
 
     @Override
-    public Object getList(String key) {
+    public Object getObj(String key) {
     
        return map.get(key);
     }

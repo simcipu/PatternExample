@@ -27,9 +27,9 @@ public class PrototypePattern {
         Prototype mapCloned = (MyMap) map.clone();
         map.add("key1", "primo valore");
         mapCloned.add("key2","secondo valore");
-        String ob = (String) map.getList("key1");
-        String ob2=(String) mapCloned.getList("key2");
-        String ob3=(String) mapCloned.getList("key1");
+        String ob = (String) map.getObj("key1");
+        String ob2=(String) mapCloned.getObj("key2");
+        String ob3=(String) mapCloned.getObj("key1");
         
         logger.info("****************************************************");
         logger.info("PROTOTYPE METHOD");

@@ -5,7 +5,6 @@
  */
 package it.pattern.example.prototypePattern;
 
-import java.util.List;
 
 /**
  *
@@ -22,6 +21,6 @@ public abstract class Prototype implements Cloneable{
  
 
     
-    public abstract Object getList(String key);
+    public abstract Object getObj(String key);
     
 }
